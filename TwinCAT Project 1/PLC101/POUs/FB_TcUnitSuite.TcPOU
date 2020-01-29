@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+  <POU Name="FB_TcUnitSuite" Id="{2f87d7c8-4a4e-4a11-bccb-364b6980af77}" SpecialFunc="None">
+    <Declaration><![CDATA[{attribute 'call_after_init'}
+FUNCTION_BLOCK FB_TcUnitSuite EXTENDS FB_TestSuite
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[FailingTest();]]></ST>
+    </Implementation>
+    <Method Name="FailingTest" Id="{9f359abd-eb83-4e8b-8eb2-31c519864995}">
+      <Declaration><![CDATA[METHOD FailingTest
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[TEST('FailingTest');
+
+AssertTrue( FALSE, 'This test always fails');
+
+TEST_FINISHED();]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

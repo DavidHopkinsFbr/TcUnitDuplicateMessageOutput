@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.22" ClassName="CNestedPlcProjDef">
+	<Project GUID="{F2D0FECB-6A08-4CA3-8FEF-74524F2E160A}" Name="PLC102" PrjFilePath="..\..\PLC102\PLC102.plcproj" TmcFilePath="..\..\PLC102\PLC102.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+			<Name>PLC102 Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502041"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+</TcSmItem>
